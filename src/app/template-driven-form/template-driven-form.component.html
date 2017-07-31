@@ -1,0 +1,14 @@
+<form class="container"
+      #userForm = "ngForm"
+      (ngSubmit) = "onSubmit(userForm.value)">
+  <input type="text" name="firstname" placeholder="Please enter your name" ngModel>
+  <br><br>
+  <input type="text" name="lastname" placeholder="Please enter your last name" ngModel>
+  <br><br>
+  <input type="text" name="phone" placeholder="Please enter your phone no" ngModel>
+  <br><br>
+
+  <input type="submit" value="Submit">
+
+</form>
+

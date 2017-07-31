@@ -1,0 +1,14 @@
+<div class="container" style="border: 5px solid blue">
+  <form class="container" [formGroup]="form"
+        (ngSubmit) ="onSend(form.value)">
+
+    <input type="text" name="firstname" placeholder="Please enter your name" formControlName="firstname">
+    <br><br>
+    <input type="text" name="lastname" placeholder="Please enter your last name" formControlName="lastname">
+    <br><br>
+    <input type="text" name="phone" placeholder="Please enter your phone no" formControlName="phone">
+    <br><br>
+
+    <input type="submit" [disabled]= "!form.valid" value="submit">
+  </form>
+</div>
